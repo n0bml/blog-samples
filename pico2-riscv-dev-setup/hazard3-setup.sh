@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 set -e
-
-PICO_PATH="${HOME}/pico"
+PICO_PATH=${PICO_PATH:="${HOME}/pico"}
 TOOLCHAIN_PATH="${PICO_PATH}/toolchains"
-
+echo "PICO_PATH: ${PICO_PATH}, TOOLCHAIN_PATH: ${TOOLCHAIN_PATH}"
 git clone https://github.com/riscv/riscv-gnu-toolchain gcc14-hazard3-rp2350
 cd gcc14-hazard3-rp2350
 
